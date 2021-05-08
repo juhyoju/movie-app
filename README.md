@@ -9,7 +9,7 @@ React JS Fundamentals Course
 
 ## React 원리 1
 	
-React는 모든 요소를 생성한다는 것
+React는 모든 요소를 생성한다는 것  
 Javascript로 생성하고, HTML로 요소를 밀어 넣는 방식 (?)
 
 - React는 index.html 의 id="root" 박스 자식으로 app.js 의 component를 넣는다.
@@ -36,7 +36,7 @@ html을 반환하는 함수이다.
 - component가 data를 보여지게 한다.
 - react는 component를 사용해서 HTML 작성하려는 경우에 필요
 
-**App.js**
+**App.js**  
 App.js의 funcion App을 가지고 있고, HTML을 반환한다.
 ```javascript	
 function  App() {
@@ -44,7 +44,7 @@ function  App() {
 }
 ```
 #### ❗❗  JSX란?
- Javascript와 HTMl 사이의 조합 
+ Javascript와 HTMl 사이의 조합  
  **Javascript 안의 HTML**
 - react에서 시작된 유일한 개념
 - component에 정보를 보낼 수 있다.
@@ -53,10 +53,10 @@ function  App() {
 <br>
 
 #### ❗❗ 어떻게 component를 만들까?
-1. component를 작성할 때마다 ```import React from "react"``` 작성 필요
+1. component를 작성할 때마다 ```import React from "react"``` 작성 필요  
 (react가 jsx가 있는 component를 사용하는 것을 이해하기 위해)
 
-3. `function Potato() `
+3. `function Potato() `  
 (대문자로 시작하는 Potato가 함수)
 
 4. `return ()`
@@ -64,10 +64,10 @@ function  App() {
 6. Potato 사용
 
 #### ❗ ❗  어떻게 생성한 component를 사용할까?
-index.js에 App을 import하고 있는 것처럼 생성한 Potato를 import하게 되면 작동하지 않음 (인접한 jsx요소를 가지게 하지 않는다는 오류 메세지)
-✅ react application은 하나의 component만을 rendering 해야하는데 index.js에서는 그 component가 App 이기 때문
+index.js에 App을 import하고 있는 것처럼 생성한 Potato를 import하게 되면 작동하지 않음 (인접한 jsx요소를 가지게 하지 않는다는 오류 메세지)  
+✅ react application은 하나의 component만을 rendering 해야하는데 index.js에서는 그 component가 App 이기 때문  
 
-**따.라.서.**
+**따.라.서.**  
 Potato를 App 내부에 추가하자.
 - App.js 내부에 potato `import`
 ( ./ : directory를 의미, App.js와 같은 directory)
