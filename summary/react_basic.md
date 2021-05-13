@@ -57,6 +57,7 @@ function  App() {
 #### ❗ ❗  어떻게 생성한 component를 사용할까?
 index.js에 App을 import하고 있는 것처럼 생성한 Potato를 import하게 되면 작동하지 않음  
 (인접한 jsx요소를 가지게 하지 않는다는 오류 메세지)    
+
 ✅ react application은 하나의 component만을 rendering 해야하는데 index.js에서는 그 component가 App 이기 때문  
 
 **따.라.서.**  
