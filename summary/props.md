@@ -8,13 +8,13 @@
   어떤 것의 이름 속성을 따옴표와 텍스트를 쓰는 것과 같은 방식  
 = jsx (예: `<Food fav = "Kimchi" /> `)
 
- **food component**에 정보를 보내는 방법이다.
+ **food component**에 정보를 보내는 방법이다.  
 이후 refresh 시 아무 변화가 없는 것은 정보를 보냈지만 그 정보를 사용하지 않았기 때문
 
   <br>
   
 ## prop
-**❗❗ 리액트 개념 ❗❗**
+**❗❗ 리액트 개념 ❗❗**  
 component에 value로 prop(=property) name을 준다(?)
 
 **[이해]**
