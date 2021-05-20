@@ -1,19 +1,46 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 
-function Food({ fav }) {
-  return <h1>I love {fav}</h1> 
+
+const foodILike = [
+  {
+    id: 1,
+    name : "kimchi",
+    rating: 5,
+  },
+  {
+    id: 2,
+    name : "kimbab",
+    rating: 3,
+  },
+];
+
+function Food({ name, rating }) {
+  return (
+    <div>
+      <h2>I like {name}</h2>
+      <h4>{rating} / 5.0</h4>
+    </div>
+  );
+}
+
+Food.propTypes = {
+  name: PropTypes.string.isRequired,
+  rating: PropTypes.number.isRequired
 }
 
 
 function App() {
   return (
     <div>
-      <h1>HELLO!!!</h1>
-      <Food fav = "kimchi" />
-      <Food fav = "ramen" />
-      <Food fav = "chukumi" />
-      <Food fav = "samgiopsal" />
+      {foodILike.map(dish => (
+        <Food 
+          name = {dish.name}
+          key = {dish.id} 
+          rating = {dish.rating} 
+        />
+      ))}
     </div>
   ); 
 }
